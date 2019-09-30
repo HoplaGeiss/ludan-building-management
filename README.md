@@ -1,27 +1,23 @@
-# LudanBuildingManagement
+# Building Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+I spent approximately 2.5 hours on this project.
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Dev server: Run `ng serve`, then navigate to `http://localhost:4200/`.
+- Unit tests: Run `ng test`.
 
-## Code scaffolding
+## Notes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+As instructed I:
+- Only used bootstrap 4 as a dependency.
+- Used a validation service with the following method: `isValidNickname(nickname: string): Observable<boolean>`.
 
-## Build
+For the form, I thought it was appropriate to use a form group containing a `formArray`. That's for two reasons:
+- This way the form could be extended to have nicknames for each room of the building.
+- We can have a variable number of nickname input (1 or many)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+I thought I would prevent the user from deleting the last input as it is probably a bad user experience to have an empty form. I did that by disabling the remove button `[disabled]="nicknames.length === 1"`
 
-## Running unit tests
+To fake a real asynchronous validation, I added a delay to the service.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

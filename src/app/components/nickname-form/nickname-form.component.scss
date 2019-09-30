@@ -1,0 +1,25 @@
+.add-button {
+  margin-top: 20px;
+}
+
+.nicknames-group {
+  border: 1px solid #ededed;
+  padding: 10px;
+  border-radius: 5px;
+
+  input.error {
+    border-left: 5px solid red;
+  }
+
+  .nickname-row {
+    margin: 10px 0;
+  }
+
+  .remove-button {
+    margin-left: 20px;
+  }
+}
+
+.error-wrapper {
+  height: 40px;
+}
