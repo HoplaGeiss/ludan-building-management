@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { NickNameFormModule } from './components/nickname-form/nickname-form.module';
+import { BuildingFormModule } from './components/building-form/building-form.module';
 
 @NgModule({
-  imports: [BrowserModule, NickNameFormModule],
+  imports: [BrowserModule, BuildingFormModule],
   declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent]

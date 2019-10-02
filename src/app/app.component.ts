@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
           magna pariatur consectetur commodo minim. Cillum laborum reprehenderit
           reprehenderit officia.
         </p>
-        <ludan-nickname-form></ludan-nickname-form>
+        <ludan-building-form></ludan-building-form>
       </div>
     </main>
   `
